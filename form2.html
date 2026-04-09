@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+    <style>
+      body {
+        font-family: cursive;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+       }
+      legend {
+        color: aliceblue;
+        background-color: black;
+        padding: 5px 10px;
+        border-radius: 10px 0.5px;
+      }
+      form {
+        background-color: white;
+        padding: 20px;
+        border-radius: 1px 28px;
+       
+        width: 400px;
+        
+      }
+      input{
+        width: 80%;
+        padding: 8px;
+        border: 2px solid rgb(3, 8, 13);
+        border-radius: 5px;
+      }
+table{
+    width: 100%;
+    border-spacing: 10px;
+}
+td{
+    vertical-align: top;
+}
+
+input[type="checkbox"],input[type="radio"]{
+    width: auto;
+}
+    </style>
+  </head>
+  <body>
+    <form action="forms.html" >
+      <fieldset>
+       <table>
+               <tr>
+            <td><label for="">Skills:</label></td>
+            <td>
+              <input type="checkbox">HTML
+              <input type="checkbox">CSS
+              <input type="checkbox">Java
+            
+
+            </td>
+          </tr>
+          <tr>
+        <td><label for="">Date of Birth:</label></td>
+        <td><input type="date"></td>
+          </tr>
+          <tr>
+            <td><label for="">Phone No:</label></td>
+            <td><input type="tel" placeholder="enter the number"></td>
+          </tr>
+          <tr><td><label for="">Website:</label></td>
+        <td>
+            <input type="url" placeholder="https://example.com">
+        </td></tr>
+        <tr>
+            <td><label for="">Rate Yourself:</label></td>
+            <td><input type="range" min="0" max="20"></td>
+        </tr>
+        <tr><td><label for="">Address:</label></td>
+        <td><textarea name="" id="" rows="5" ></textarea></td></tr>
+
+        <tr><td><label for="">State:</label></td>
+        <td>
+            <select name="" id="">
+                 <option value="">--select---</option>
+                <option value="">TamilNadu</option>
+                <option value="">Kerala</option>
+                <option value="">Andhra</option>
+                <option value="">Assam</option>
+                <option value="">Nepal</option>
+            </select>
+        </td>
+        </tr>
+
+        <tr>
+            <td><label for="">Resume:</label></td>
+            <td><input type="file"></td>
+        </tr>
+
+        <tr>
+            <td><label for="">Gender:</label></td>
+            <td>
+                <input type="radio" name="gn">Male
+                <input type="radio" name="gn">Female
+                <input type="radio" name="gn">Others
+
+            </td>
+        </tr>
+        <tr>
+            <td><input type="submit"></td>
+        </tr>
+       </table>
+
+      </fieldset>
+    </form>
+    
+  </body>
+</html>
